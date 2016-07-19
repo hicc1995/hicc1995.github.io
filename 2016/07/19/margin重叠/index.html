@@ -6,22 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="CSS隐藏页面元素6种Opacity元素透明度设为0,只是视觉上不可见,元素仍占据自己的位置.对于读屏软件无用,内容还是会显示.
-Visibility设为hidden,同opacity,隐藏元素依旧会对网页布局起作用注意:如果一个元素的 visibility 被设置为 hidden，同时想要显示它的某个子孙元素，只要将那个元素的 visibility 显式设置为 visible 即可
-Displa">
+  <meta name="description" content="margin重叠首先说明为什么会产生margin重叠：为了显示文本页面时各处的距离一致">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo">
-<meta property="og:url" content="http://hicc1995.github.io/2016/07/19/css隐藏元素5种/index.html">
+<meta property="og:url" content="http://hicc1995.github.io/2016/07/19/margin重叠/index.html">
 <meta property="og:site_name" content="hexo">
-<meta property="og:description" content="CSS隐藏页面元素6种Opacity元素透明度设为0,只是视觉上不可见,元素仍占据自己的位置.对于读屏软件无用,内容还是会显示.
-Visibility设为hidden,同opacity,隐藏元素依旧会对网页布局起作用注意:如果一个元素的 visibility 被设置为 hidden，同时想要显示它的某个子孙元素，只要将那个元素的 visibility 显式设置为 visible 即可
-Displa">
-<meta property="og:updated_time" content="2016-07-19T12:32:24.350Z">
+<meta property="og:description" content="margin重叠首先说明为什么会产生margin重叠：为了显示文本页面时各处的距离一致">
+<meta property="og:image" content="http://images.51cto.com/files/uploadimg/20100826/1410004.jpg">
+<meta property="og:image" content="http://images.51cto.com/files/uploadimg/20100826/1410000.jpg">
+<meta property="og:image" content="http://images.51cto.com/files/uploadimg/20100826/1410001.jpg">
+<meta property="og:image" content="http://images.51cto.com/files/uploadimg/20100826/1410002.jpg">
+<meta property="og:image" content="http://images.51cto.com/files/uploadimg/20100826/1410003.jpg">
+<meta property="og:updated_time" content="2016-07-19T15:08:14.538Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo">
-<meta name="twitter:description" content="CSS隐藏页面元素6种Opacity元素透明度设为0,只是视觉上不可见,元素仍占据自己的位置.对于读屏软件无用,内容还是会显示.
-Visibility设为hidden,同opacity,隐藏元素依旧会对网页布局起作用注意:如果一个元素的 visibility 被设置为 hidden，同时想要显示它的某个子孙元素，只要将那个元素的 visibility 显式设置为 visible 即可
-Displa">
+<meta name="twitter:description" content="margin重叠首先说明为什么会产生margin重叠：为了显示文本页面时各处的距离一致">
+<meta name="twitter:image" content="http://images.51cto.com/files/uploadimg/20100826/1410004.jpg">
   
   
     <link rel="icon" href="/favicon.png">
@@ -172,11 +172,11 @@ Displa">
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-css隐藏元素5种" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-margin重叠" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/07/19/css隐藏元素5种/" class="article-date">
-  	<time datetime="2016-07-19T12:38:53.062Z" itemprop="datePublished">2016-07-19</time>
+      <a href="/2016/07/19/margin重叠/" class="article-date">
+  	<time datetime="2016-07-19T15:08:14.538Z" itemprop="datePublished">2016-07-19</time>
 </a>
     </div>
   
@@ -187,15 +187,12 @@ Displa">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="CSS隐藏页面元素6种"><a href="#CSS隐藏页面元素6种" class="headerlink" title="CSS隐藏页面元素6种"></a>CSS隐藏页面元素6种</h1><h4 id="Opacity"><a href="#Opacity" class="headerlink" title="Opacity"></a>Opacity</h4><p>元素透明度设为0,只是视觉上不可见,元素仍占据自己的位置.<br>对于读屏软件无用,内容还是会显示.</p>
-<h4 id="Visibility"><a href="#Visibility" class="headerlink" title="Visibility"></a>Visibility</h4><p>设为hidden,同opacity,隐藏元素依旧会对网页布局起作用<br>注意:如果一个元素的 visibility 被设置为 hidden，同时想要显示它的某个子孙元素，只要将那个元素的 visibility 显式设置为 visible 即可</p>
-<h4 id="Display"><a href="#Display" class="headerlink" title="Display"></a>Display</h4><p>没有交互效果,不占据位置,子元素也会隐藏,DOM依然可以访问.</p>
-<h4 id="Position"><a href="#Position" class="headerlink" title="Position"></a>Position</h4><p>既可以交互,又不影响布局<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.hide &#123;</span><br><span class="line">   position: absolute;</span><br><span class="line">   top: -9999px;</span><br><span class="line">   left: -9999px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<blockquote>
-<p>你得避免使用这个方法去隐藏任何可以获得焦点的元素，因为如果那么做，当用户让那个元素获得焦点时，会导致一个不可预料的焦点切换。这个方法在创建自定义复选框和单选按钮时经常被使用。</p>
-</blockquote>
-<h4 id="Clip-path"><a href="#Clip-path" class="headerlink" title="Clip-path"></a>Clip-path</h4><p>通过裁减元素实现,clip-path 属性还没有在 IE 或者 Edge 下被完全支持<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.hide &#123;</span><br><span class="line">  clip-path: polygon(0px 0px,0px 0px,0px 0px,0px 0px);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h4 id="text-indent"><a href="#text-indent" class="headerlink" title="text-indent"></a>text-indent</h4><p>文本缩进,一般用于隐藏文字<br>通过使文字溢出但不显示（overflow:hidden）的方式来达到隐藏文字的<br><a id="more"></a></p>
+        <h1 id="margin重叠"><a href="#margin重叠" class="headerlink" title="margin重叠"></a>margin重叠</h1><p>首先说明为什么会产生margin重叠：<br>为了显示文本页面时各处的距离一致<br><img src="http://images.51cto.com/files/uploadimg/20100826/1410004.jpg" alt=""><br><a id="more"></a></p>
+<h4 id="产生重叠的两种情况"><a href="#产生重叠的两种情况" class="headerlink" title="产生重叠的两种情况"></a>产生重叠的两种情况</h4><h5 id="一个元素出现在另一个元素上面"><a href="#一个元素出现在另一个元素上面" class="headerlink" title="一个元素出现在另一个元素上面"></a>一个元素出现在另一个元素上面</h5><p><img src="http://images.51cto.com/files/uploadimg/20100826/1410000.jpg" alt=""></p>
+<h5 id="一个元素包含在一个元素中"><a href="#一个元素包含在一个元素中" class="headerlink" title="一个元素包含在一个元素中"></a>一个元素包含在一个元素中</h5><p><img src="http://images.51cto.com/files/uploadimg/20100826/1410001.jpg" alt=""><br>假设有一个空元素，只有外边距<br><img src="http://images.51cto.com/files/uploadimg/20100826/1410002.jpg" alt=""><br>一系列空的段落元素占用空间非常小<br><img src="http://images.51cto.com/files/uploadimg/20100826/1410003.jpg" alt=""></p>
+<h5 id="注意：只有普通文档流中的块框的垂直外边距才会发生外边距叠加！行内框，浮动框，绝对定位框之间的外边距不会叠加"><a href="#注意：只有普通文档流中的块框的垂直外边距才会发生外边距叠加！行内框，浮动框，绝对定位框之间的外边距不会叠加" class="headerlink" title="注意：只有普通文档流中的块框的垂直外边距才会发生外边距叠加！行内框，浮动框，绝对定位框之间的外边距不会叠加"></a>注意：只有普通文档流中的块框的垂直外边距才会发生外边距叠加！行内框，浮动框，绝对定位框之间的外边距不会叠加</h5><p>博文来自精通CSS一书</p>
+<h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><p><a href="http://www.zhangxinxu.com/study/200908/margin-overlap.html" target="_blank" rel="external">张大大的分析</a></p>
+<p>1.外层padding设为1px;<br><br>2.透明边框border:1pxsolidtransparent;<br><br>3.绝对定位postion:absolute;<br>4.外层DIVoverflow:hidden;<br>5.内层DIV　加float:left;display:inline;<br>6.外层DIV有时会用到zoom:1;</p>
 
       
     </div>
@@ -205,18 +202,9 @@ Displa">
     
 <nav id="article-nav">
   
-    <a href="/2016/07/19/svg/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/06/08/cc/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">cc</div>
+    <a href="/2016/07/19/css选择器/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -251,7 +239,7 @@ Displa">
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="css隐藏元素5种" data-title="" data-url="http://hicc1995.github.io/2016/07/19/css隐藏元素5种/"></div>
+	<div class="ds-thread" data-thread-key="margin重叠" data-title="" data-url="http://hicc1995.github.io/2016/07/19/margin重叠/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">

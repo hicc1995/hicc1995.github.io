@@ -6,22 +6,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="CSS隐藏页面元素6种Opacity元素透明度设为0,只是视觉上不可见,元素仍占据自己的位置.对于读屏软件无用,内容还是会显示.
-Visibility设为hidden,同opacity,隐藏元素依旧会对网页布局起作用注意:如果一个元素的 visibility 被设置为 hidden，同时想要显示它的某个子孙元素，只要将那个元素的 visibility 显式设置为 visible 即可
-Displa">
+  <meta name="description" content="css高级选择器子选择器nav&amp;gt;li{}只选择元素的直接后代
+后代选择器nav li{}选择元素的所有后代
+相邻同胞选择器h2+p{}定位同一个父元素下某一个元素之后的元素
+属性选择器标记一个缩写：1&amp;lt;abbr title=&amp;quot;People&amp;apos;s Republic of China&amp;quot;&amp;gt;PRC&amp;lt;/abbr&amp;gt;
+abbr[title]{} 选择ab">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo">
-<meta property="og:url" content="http://hicc1995.github.io/2016/07/19/css隐藏元素5种/index.html">
+<meta property="og:url" content="http://hicc1995.github.io/2016/07/19/css选择器/index.html">
 <meta property="og:site_name" content="hexo">
-<meta property="og:description" content="CSS隐藏页面元素6种Opacity元素透明度设为0,只是视觉上不可见,元素仍占据自己的位置.对于读屏软件无用,内容还是会显示.
-Visibility设为hidden,同opacity,隐藏元素依旧会对网页布局起作用注意:如果一个元素的 visibility 被设置为 hidden，同时想要显示它的某个子孙元素，只要将那个元素的 visibility 显式设置为 visible 即可
-Displa">
-<meta property="og:updated_time" content="2016-07-19T12:32:24.350Z">
+<meta property="og:description" content="css高级选择器子选择器nav&amp;gt;li{}只选择元素的直接后代
+后代选择器nav li{}选择元素的所有后代
+相邻同胞选择器h2+p{}定位同一个父元素下某一个元素之后的元素
+属性选择器标记一个缩写：1&amp;lt;abbr title=&amp;quot;People&amp;apos;s Republic of China&amp;quot;&amp;gt;PRC&amp;lt;/abbr&amp;gt;
+abbr[title]{} 选择ab">
+<meta property="og:updated_time" content="2016-07-19T14:23:22.974Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo">
-<meta name="twitter:description" content="CSS隐藏页面元素6种Opacity元素透明度设为0,只是视觉上不可见,元素仍占据自己的位置.对于读屏软件无用,内容还是会显示.
-Visibility设为hidden,同opacity,隐藏元素依旧会对网页布局起作用注意:如果一个元素的 visibility 被设置为 hidden，同时想要显示它的某个子孙元素，只要将那个元素的 visibility 显式设置为 visible 即可
-Displa">
+<meta name="twitter:description" content="css高级选择器子选择器nav&amp;gt;li{}只选择元素的直接后代
+后代选择器nav li{}选择元素的所有后代
+相邻同胞选择器h2+p{}定位同一个父元素下某一个元素之后的元素
+属性选择器标记一个缩写：1&amp;lt;abbr title=&amp;quot;People&amp;apos;s Republic of China&amp;quot;&amp;gt;PRC&amp;lt;/abbr&amp;gt;
+abbr[title]{} 选择ab">
   
   
     <link rel="icon" href="/favicon.png">
@@ -172,11 +178,11 @@ Displa">
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-css隐藏元素5种" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-css选择器" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/07/19/css隐藏元素5种/" class="article-date">
-  	<time datetime="2016-07-19T12:38:53.062Z" itemprop="datePublished">2016-07-19</time>
+      <a href="/2016/07/19/css选择器/" class="article-date">
+  	<time datetime="2016-07-19T14:23:22.974Z" itemprop="datePublished">2016-07-19</time>
 </a>
     </div>
   
@@ -187,15 +193,12 @@ Displa">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="CSS隐藏页面元素6种"><a href="#CSS隐藏页面元素6种" class="headerlink" title="CSS隐藏页面元素6种"></a>CSS隐藏页面元素6种</h1><h4 id="Opacity"><a href="#Opacity" class="headerlink" title="Opacity"></a>Opacity</h4><p>元素透明度设为0,只是视觉上不可见,元素仍占据自己的位置.<br>对于读屏软件无用,内容还是会显示.</p>
-<h4 id="Visibility"><a href="#Visibility" class="headerlink" title="Visibility"></a>Visibility</h4><p>设为hidden,同opacity,隐藏元素依旧会对网页布局起作用<br>注意:如果一个元素的 visibility 被设置为 hidden，同时想要显示它的某个子孙元素，只要将那个元素的 visibility 显式设置为 visible 即可</p>
-<h4 id="Display"><a href="#Display" class="headerlink" title="Display"></a>Display</h4><p>没有交互效果,不占据位置,子元素也会隐藏,DOM依然可以访问.</p>
-<h4 id="Position"><a href="#Position" class="headerlink" title="Position"></a>Position</h4><p>既可以交互,又不影响布局<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.hide &#123;</span><br><span class="line">   position: absolute;</span><br><span class="line">   top: -9999px;</span><br><span class="line">   left: -9999px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<blockquote>
-<p>你得避免使用这个方法去隐藏任何可以获得焦点的元素，因为如果那么做，当用户让那个元素获得焦点时，会导致一个不可预料的焦点切换。这个方法在创建自定义复选框和单选按钮时经常被使用。</p>
-</blockquote>
-<h4 id="Clip-path"><a href="#Clip-path" class="headerlink" title="Clip-path"></a>Clip-path</h4><p>通过裁减元素实现,clip-path 属性还没有在 IE 或者 Edge 下被完全支持<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.hide &#123;</span><br><span class="line">  clip-path: polygon(0px 0px,0px 0px,0px 0px,0px 0px);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h4 id="text-indent"><a href="#text-indent" class="headerlink" title="text-indent"></a>text-indent</h4><p>文本缩进,一般用于隐藏文字<br>通过使文字溢出但不显示（overflow:hidden）的方式来达到隐藏文字的<br><a id="more"></a></p>
+        <h1 id="css高级选择器"><a href="#css高级选择器" class="headerlink" title="css高级选择器"></a>css高级选择器</h1><h5 id="子选择器"><a href="#子选择器" class="headerlink" title="子选择器"></a>子选择器</h5><p>nav&gt;li{}<br>只选择元素的直接后代</p>
+<h5 id="后代选择器"><a href="#后代选择器" class="headerlink" title="后代选择器"></a>后代选择器</h5><p>nav li{}<br>选择元素的所有后代</p>
+<h5 id="相邻同胞选择器"><a href="#相邻同胞选择器" class="headerlink" title="相邻同胞选择器"></a>相邻同胞选择器</h5><p>h2+p{}<br>定位同一个父元素下某一个元素之后的元素</p>
+<h5 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h5><p>标记一个缩写：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;abbr title=&quot;People&apos;s Republic of China&quot;&gt;PRC&lt;/abbr&gt;</span><br></pre></td></tr></table></figure></p>
+<p>abbr[title]{} 选择abbr标签有title属性的元素<br>a[title][href]{} 选择a标签同事有title和href的元素<br>根据属性值中的词列表的某个词进行选择，则需要使用波浪号（~）<br>p[class~=”important”]{} 选择 class 属性中包含 important 的元素</p>
+<p>[abc^=”def”]选择 abc 属性值以 “def” 开头的所有元素<br><br>[abc$=”def”]选择 abc 属性值以 “def” 结尾的所有元素<br><br>[abc*=”def”]选择 abc 属性值中包含子串 “def” 的所有元素</p>
 
       
     </div>
@@ -205,7 +208,7 @@ Displa">
     
 <nav id="article-nav">
   
-    <a href="/2016/07/19/svg/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/07/19/margin重叠/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
@@ -215,8 +218,8 @@ Displa">
     </a>
   
   
-    <a href="/2016/06/08/cc/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">cc</div>
+    <a href="/2016/07/19/learngit/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -251,7 +254,7 @@ Displa">
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="css隐藏元素5种" data-title="" data-url="http://hicc1995.github.io/2016/07/19/css隐藏元素5种/"></div>
+	<div class="ds-thread" data-thread-key="css选择器" data-title="" data-url="http://hicc1995.github.io/2016/07/19/css选择器/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
