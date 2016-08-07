@@ -6,18 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="git创建版本库123$mkdir learngit$cd learngit$pwd">
+  <meta name="description" content="Promise简单说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个异步操作）的结果。从语法上说，Promise是一个对象，从它可以获取异步操作的消息。Promise提供统一的API，各种异步操作都可以用同样的方法进行处理。ES6规定，Promise对象是一个构造函数，用来生成Promise实例。
+Promise缺点:1.无法取消Promise，一旦新建它就会立即执行，无法中途取消。2.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo">
-<meta property="og:url" content="http://hicc1995.github.io/2016/07/19/learngit/index.html">
+<meta property="og:url" content="http://hicc1995.github.io/2016/08/07/Promise/index.html">
 <meta property="og:site_name" content="hexo">
-<meta property="og:description" content="git创建版本库123$mkdir learngit$cd learngit$pwd">
-<meta property="og:image" content="http://www.liaoxuefeng.com/files/attachments/001384907702917346729e9afbf4127b6dfbae9207af016000/0">
-<meta property="og:updated_time" content="2016-07-19T13:56:48.438Z">
+<meta property="og:description" content="Promise简单说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个异步操作）的结果。从语法上说，Promise是一个对象，从它可以获取异步操作的消息。Promise提供统一的API，各种异步操作都可以用同样的方法进行处理。ES6规定，Promise对象是一个构造函数，用来生成Promise实例。
+Promise缺点:1.无法取消Promise，一旦新建它就会立即执行，无法中途取消。2.">
+<meta property="og:updated_time" content="2016-08-01T08:12:26.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo">
-<meta name="twitter:description" content="git创建版本库123$mkdir learngit$cd learngit$pwd">
-<meta name="twitter:image" content="http://www.liaoxuefeng.com/files/attachments/001384907702917346729e9afbf4127b6dfbae9207af016000/0">
+<meta name="twitter:description" content="Promise简单说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个异步操作）的结果。从语法上说，Promise是一个对象，从它可以获取异步操作的消息。Promise提供统一的API，各种异步操作都可以用同样的方法进行处理。ES6规定，Promise对象是一个构造函数，用来生成Promise实例。
+Promise缺点:1.无法取消Promise，一旦新建它就会立即执行，无法中途取消。2.">
   
   
     <link rel="icon" href="/favicon.png">
@@ -168,11 +169,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-learngit" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Promise" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/07/19/learngit/" class="article-date">
-  	<time datetime="2016-07-19T13:56:48.438Z" itemprop="datePublished">2016-07-19</time>
+      <a href="/2016/08/07/Promise/" class="article-date">
+  	<time datetime="2016-08-07T00:55:15.293Z" itemprop="datePublished">2016-08-07</time>
 </a>
     </div>
   
@@ -183,12 +184,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="git"><a href="#git" class="headerlink" title="git"></a>git</h1><h5 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$mkdir learngit</span><br><span class="line">$cd learngit</span><br><span class="line">$pwd</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>git init 把这个目录变成Git可以管理的仓库<br>git add 把文件添加到仓库<br>git commit -m”更改说明” 把文件提交到仓库<br>git status 查看工作区的状态<br>如果git status告诉你有文件被修改过，用git diff可以查看修改内容。<br>git log 告诉我们历史记录<br>git reset 版本回退<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard HEAD^</span><br></pre></td></tr></table></figure></p>
-<p>上一个版本，HEAD当前版本。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --hard 3628164</span><br><span class="line">HEAD is now at 3628164 append GPL</span><br></pre></td></tr></table></figure></p>
-<p>git reflog 记录每一次命令</p>
-<h5 id="版本库"><a href="#版本库" class="headerlink" title="版本库"></a>版本库</h5><p><img src="http://www.liaoxuefeng.com/files/attachments/001384907702917346729e9afbf4127b6dfbae9207af016000/0" alt="" title="关系图"></p>
+        <h1 id="Promise"><a href="#Promise" class="headerlink" title="Promise"></a>Promise</h1><p>简单说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个异步操作）的结果。从语法上说，Promise是一个对象，从它可以获取异步操作的消息。Promise提供统一的API，各种异步操作都可以用同样的方法进行处理。<br>ES6规定，Promise对象是一个构造函数，用来生成Promise实例。</p>
+<h6 id="Promise缺点"><a href="#Promise缺点" class="headerlink" title="Promise缺点:"></a>Promise缺点:</h6><p>1.无法取消Promise，一旦新建它就会立即执行，无法中途取消。<br>2.如果不设置回调函数，Promise内部抛出的错误，不会反应到外部。<br>3.当处于Pending状态时，无法得知目前进展到哪一个阶段（刚刚开始还是即将完成</p>
+<h6 id="状态："><a href="#状态：" class="headerlink" title="状态："></a>状态：</h6><p>肯定（fulfilled） 该 Promise 对应的操作成功了<br>否定（rejected） 该 Promise 对应的操作失败了<br>等待（pending） 还没有得到肯定或者否定结果，进行中</p>
+<p>结束（settled） 已经肯定或者否定了</p>
 
       
     </div>
@@ -198,17 +197,8 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/07/19/margin重叠/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/07/19/csdng/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/08/07/sass/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title"></div>
       <strong class="article-nav-caption">></strong>
     </a>
@@ -244,7 +234,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="learngit" data-title="" data-url="http://hicc1995.github.io/2016/07/19/learngit/"></div>
+	<div class="ds-thread" data-thread-key="Promise" data-title="" data-url="http://hicc1995.github.io/2016/08/07/Promise/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">

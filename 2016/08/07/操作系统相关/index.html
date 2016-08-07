@@ -6,18 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="git创建版本库123$mkdir learngit$cd learngit$pwd">
+  <meta name="description" content="操作系统相关进程和线程对于操作系统来说一个进程就是一个任务单个cpu一次运行一个任务,任意时刻cpu运行一个进程,一个进程可以包括多个线程区别:进程有独立的地址空间，一个进程崩溃后，在保护模式下不会对其它进程产生影响，而线程只是一个进程中的不同执行路径。线程有自己的堆栈和局部变量，但线程之间没有单独的地址空间，一个线程死掉就等于整个进程死掉，所以多进程的程序要比多线程的程序健壮，但在进程切换时，耗">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo">
-<meta property="og:url" content="http://hicc1995.github.io/2016/07/19/learngit/index.html">
+<meta property="og:url" content="http://hicc1995.github.io/2016/08/07/操作系统相关/index.html">
 <meta property="og:site_name" content="hexo">
-<meta property="og:description" content="git创建版本库123$mkdir learngit$cd learngit$pwd">
-<meta property="og:image" content="http://www.liaoxuefeng.com/files/attachments/001384907702917346729e9afbf4127b6dfbae9207af016000/0">
-<meta property="og:updated_time" content="2016-07-19T13:56:48.438Z">
+<meta property="og:description" content="操作系统相关进程和线程对于操作系统来说一个进程就是一个任务单个cpu一次运行一个任务,任意时刻cpu运行一个进程,一个进程可以包括多个线程区别:进程有独立的地址空间，一个进程崩溃后，在保护模式下不会对其它进程产生影响，而线程只是一个进程中的不同执行路径。线程有自己的堆栈和局部变量，但线程之间没有单独的地址空间，一个线程死掉就等于整个进程死掉，所以多进程的程序要比多线程的程序健壮，但在进程切换时，耗">
+<meta property="og:updated_time" content="2016-08-01T02:53:06.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo">
-<meta name="twitter:description" content="git创建版本库123$mkdir learngit$cd learngit$pwd">
-<meta name="twitter:image" content="http://www.liaoxuefeng.com/files/attachments/001384907702917346729e9afbf4127b6dfbae9207af016000/0">
+<meta name="twitter:description" content="操作系统相关进程和线程对于操作系统来说一个进程就是一个任务单个cpu一次运行一个任务,任意时刻cpu运行一个进程,一个进程可以包括多个线程区别:进程有独立的地址空间，一个进程崩溃后，在保护模式下不会对其它进程产生影响，而线程只是一个进程中的不同执行路径。线程有自己的堆栈和局部变量，但线程之间没有单独的地址空间，一个线程死掉就等于整个进程死掉，所以多进程的程序要比多线程的程序健壮，但在进程切换时，耗">
   
   
     <link rel="icon" href="/favicon.png">
@@ -168,11 +166,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-learngit" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-操作系统相关" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/07/19/learngit/" class="article-date">
-  	<time datetime="2016-07-19T13:56:48.438Z" itemprop="datePublished">2016-07-19</time>
+      <a href="/2016/08/07/操作系统相关/" class="article-date">
+  	<time datetime="2016-08-07T00:36:05.469Z" itemprop="datePublished">2016-08-07</time>
 </a>
     </div>
   
@@ -183,12 +181,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="git"><a href="#git" class="headerlink" title="git"></a>git</h1><h5 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$mkdir learngit</span><br><span class="line">$cd learngit</span><br><span class="line">$pwd</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>git init 把这个目录变成Git可以管理的仓库<br>git add 把文件添加到仓库<br>git commit -m”更改说明” 把文件提交到仓库<br>git status 查看工作区的状态<br>如果git status告诉你有文件被修改过，用git diff可以查看修改内容。<br>git log 告诉我们历史记录<br>git reset 版本回退<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard HEAD^</span><br></pre></td></tr></table></figure></p>
-<p>上一个版本，HEAD当前版本。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --hard 3628164</span><br><span class="line">HEAD is now at 3628164 append GPL</span><br></pre></td></tr></table></figure></p>
-<p>git reflog 记录每一次命令</p>
-<h5 id="版本库"><a href="#版本库" class="headerlink" title="版本库"></a>版本库</h5><p><img src="http://www.liaoxuefeng.com/files/attachments/001384907702917346729e9afbf4127b6dfbae9207af016000/0" alt="" title="关系图"></p>
+        <h1 id="操作系统相关"><a href="#操作系统相关" class="headerlink" title="操作系统相关"></a>操作系统相关</h1><h5 id="进程和线程"><a href="#进程和线程" class="headerlink" title="进程和线程"></a>进程和线程</h5><p>对于操作系统来说一个进程就是一个任务<br>单个cpu一次运行一个任务,任意时刻cpu运行一个进程,一个进程可以包括多个线程<br>区别:<br>进程有独立的地址空间，一个进程崩溃后，在保护模式下不会对其它进程产生影响，而线程只是一个进程中的不同执行路径。线程有自己的堆栈和局部变量，但线程之间没有单独的地址空间，一个线程死掉就等于整个进程死掉，所以多进程的程序要比多线程的程序健壮，但在进程切换时，耗费资源较大，效率要差一些。但对于一些要求同时进行并且又要共享某些变量的并发操作，只能用线程，不能用进程。</p>
+<h5 id="多任务"><a href="#多任务" class="headerlink" title="多任务"></a>多任务</h5><p>单核cpu实现多任务是通过交替执行任务实现的<br>执行多任务:<br>一种是启动多个进程，每个进程虽然只有一个线程，但多个进程可以一块执行多个任务。<br>还有一种方法是启动一个进程，在一个进程内启动多个线程，这样，多个线程也可以一块执行多个任务。</p>
 
       
     </div>
@@ -198,7 +192,7 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/07/19/margin重叠/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/08/07/设计模式相关/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
@@ -208,7 +202,7 @@
     </a>
   
   
-    <a href="/2016/07/19/csdng/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/08/07/datalist/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title"></div>
       <strong class="article-nav-caption">></strong>
     </a>
@@ -244,7 +238,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="learngit" data-title="" data-url="http://hicc1995.github.io/2016/07/19/learngit/"></div>
+	<div class="ds-thread" data-thread-key="操作系统相关" data-title="" data-url="http://hicc1995.github.io/2016/08/07/操作系统相关/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
