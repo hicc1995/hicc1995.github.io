@@ -6,16 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="datalist用法HTML5的API,实现如输入框自动下拉提示(AutoComplete).123456&amp;lt;input id=&amp;quot;myCar&amp;quot; list=&amp;quot;cars&amp;quot; /&amp;gt;&amp;lt;datalist id=&amp;quot;cars&amp;quot;&amp;gt;  &amp;lt;option value=&amp;quot;BMW&amp;quot;&amp;gt;Detroit Lions&amp;l">
+  <meta name="description" content="16px=1em=100%=12pt
+px  像素是你屏幕设备物理上能显示出的最小的一个点,px的具体大小是受到屏幕的分辨率影响的，也就是和划分屏幕各自的方式有关。例如，同样是100px大小的字体，如果显示器使用800×600像素的分辨率，那么，每个字的宽度是屏幕的1/8。若将显示器的分辨率设置为1024×768像素，那么同样是100px字体的字，其宽度就越为屏幕宽度的1/10。 
+em  相对长">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo">
-<meta property="og:url" content="http://hicc1995.github.io/2016/08/07/datalist/index.html">
+<meta property="og:url" content="http://hicc1995.github.io/2016/08/18/单位/index.html">
 <meta property="og:site_name" content="hexo">
-<meta property="og:description" content="datalist用法HTML5的API,实现如输入框自动下拉提示(AutoComplete).123456&amp;lt;input id=&amp;quot;myCar&amp;quot; list=&amp;quot;cars&amp;quot; /&amp;gt;&amp;lt;datalist id=&amp;quot;cars&amp;quot;&amp;gt;  &amp;lt;option value=&amp;quot;BMW&amp;quot;&amp;gt;Detroit Lions&amp;l">
-<meta property="og:updated_time" content="2016-08-02T07:58:38.000Z">
+<meta property="og:description" content="16px=1em=100%=12pt
+px  像素是你屏幕设备物理上能显示出的最小的一个点,px的具体大小是受到屏幕的分辨率影响的，也就是和划分屏幕各自的方式有关。例如，同样是100px大小的字体，如果显示器使用800×600像素的分辨率，那么，每个字的宽度是屏幕的1/8。若将显示器的分辨率设置为1024×768像素，那么同样是100px字体的字，其宽度就越为屏幕宽度的1/10。 
+em  相对长">
+<meta property="og:updated_time" content="2016-08-09T08:12:59.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo">
-<meta name="twitter:description" content="datalist用法HTML5的API,实现如输入框自动下拉提示(AutoComplete).123456&amp;lt;input id=&amp;quot;myCar&amp;quot; list=&amp;quot;cars&amp;quot; /&amp;gt;&amp;lt;datalist id=&amp;quot;cars&amp;quot;&amp;gt;  &amp;lt;option value=&amp;quot;BMW&amp;quot;&amp;gt;Detroit Lions&amp;l">
+<meta name="twitter:description" content="16px=1em=100%=12pt
+px  像素是你屏幕设备物理上能显示出的最小的一个点,px的具体大小是受到屏幕的分辨率影响的，也就是和划分屏幕各自的方式有关。例如，同样是100px大小的字体，如果显示器使用800×600像素的分辨率，那么，每个字的宽度是屏幕的1/8。若将显示器的分辨率设置为1024×768像素，那么同样是100px字体的字，其宽度就越为屏幕宽度的1/10。 
+em  相对长">
   
   
     <link rel="icon" href="/favicon.png">
@@ -166,11 +172,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-datalist" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-单位" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/08/07/datalist/" class="article-date">
-  	<time datetime="2016-08-07T00:36:02.925Z" itemprop="datePublished">2016-08-07</time>
+      <a href="/2016/08/18/单位/" class="article-date">
+  	<time datetime="2016-08-18T02:45:14.784Z" itemprop="datePublished">2016-08-18</time>
 </a>
     </div>
   
@@ -181,13 +187,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="datalist用法"><a href="#datalist用法" class="headerlink" title="datalist用法"></a>datalist用法</h1><p>HTML5的API,实现如输入框自动下拉提示(AutoComplete).<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;input id=&quot;myCar&quot; list=&quot;cars&quot; /&gt;</span><br><span class="line">&lt;datalist id=&quot;cars&quot;&gt;</span><br><span class="line">  &lt;option value=&quot;BMW&quot;&gt;Detroit Lions&lt;/option&gt;</span><br><span class="line">  &lt;option value=&quot;Ford&quot;&gt;Detroit&lt;/option&gt;</span><br><span class="line">  &lt;option value=&quot;Volvo&quot;&gt;Lions&lt;/option&gt;</span><br><span class="line">&lt;/datalist&gt;</span><br></pre></td></tr></table></figure></p>
-<p>如果在option中一旦指定了value的值，则用户通过下拉列表选择后，文本框中显示的将会是value的值<br><a id="more"></a></p>
-<h5 id="Autocomplete属性"><a href="#Autocomplete属性" class="headerlink" title="Autocomplete属性"></a>Autocomplete属性</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=&quot;text&quot; name=&quot;address&quot; autocomplete=&quot;on&quot;&gt;</span><br></pre></td></tr></table></figure>
-<p>表示输入字段是否应该启用自动完成功能.</p>
-<h5 id="应对不支持的浏览器"><a href="#应对不支持的浏览器" class="headerlink" title="应对不支持的浏览器"></a>应对不支持的浏览器</h5><p>1）datalist中嵌套使用传统的select下拉选择框<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;label for=&quot;country&quot;&gt;Country:&lt;/label&gt;  </span><br><span class="line">&lt;datalist id=&quot;country_list&quot;&gt;  </span><br><span class="line">  &lt;select name=&quot;country&quot;&gt;  </span><br><span class="line">    &lt;option value=&quot;AF&quot;&gt;Afghanistan&lt;/option&gt;  </span><br><span class="line">    &lt;option value=&quot;AX&quot;&gt;Åland Islands&lt;/option&gt;  </span><br><span class="line">    &lt;option value=&quot;AL&quot;&gt;Albania&lt;/option&gt;   </span><br><span class="line">    &lt;!-- more --&gt;  </span><br><span class="line">  &lt;/select&gt;  </span><br><span class="line">  If other, please specify:  </span><br><span class="line">&lt;/datalist&gt;  </span><br><span class="line">&lt;input type=&quot;text&quot; name=&quot;country&quot; id=&quot;country&quot; list=&quot;country_list&quot;&gt;</span><br></pre></td></tr></table></figure></p>
-<p>如果不支持datalist会显示两个框,可能会有布局的问题.<br>2）使用jquery ui中的autocomplete插件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">if (Modernizr.input.list) &#123;  </span><br><span class="line">//如果返回值为true，则证明浏览器支持datalist  </span><br><span class="line">  &#125; else &#123;  </span><br><span class="line">    //浏览器不支持datalist  </span><br><span class="line">  &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h5 id="Datalist的限制"><a href="#Datalist的限制" class="headerlink" title="Datalist的限制"></a>Datalist的限制</h5><p>当然，Datalist也有限制和不足之处，体现在：<br>1）不能使用CSS去随意控制或改变其下拉建议列表中的项<br>2）不能控制datalist的位置<br>3) 不能控制每次当用户输入多少个字符后，就出现下拉建议列表<br>4）不能控制大小写敏感，或当匹配什么样的字符就出现下拉建议列表<br>5）不能将其与服务端的数据源绑定</p>
+        <p>16px=1em=100%=12pt</p>
+<h3 id="px-像素"><a href="#px-像素" class="headerlink" title="px  像素"></a>px  像素</h3><p>是你屏幕设备物理上能显示出的最小的一个点,px的具体大小是受到屏幕的分辨率影响的，也就是和划分屏幕各自的方式有关。例如，同样是100px大小的字体，如果显示器使用800×600像素的分辨率，那么，每个字的宽度是屏幕的1/8。若将显示器的分辨率设置为1024×768像素，那么同样是100px字体的字，其宽度就越为屏幕宽度的1/10。 </p>
+<h3 id="em-相对长度单位"><a href="#em-相对长度单位" class="headerlink" title="em  相对长度单位"></a>em  相对长度单位</h3><p>浏览器的默认字体高都是16px。所有未经调整的浏览器都符合: 1em=16px。<br>10px=0.625em。为了简化font-size的换算，需要在css中的body选择器中声明Font-size=62.5%，这就使em值变为 16px*62.5%=10px, 这样12px=1.2em.</p>
+<ol>
+<li>em的值并不是固定的；</li>
+<li>em会继承父级元素的字体大小。<h3 id="rem-相对长度单位"><a href="#rem-相对长度单位" class="headerlink" title="rem   相对长度单位"></a>rem   相对长度单位</h3>rem为元素设定字体大小时，相对的只是HTML根元素。<h3 id="vh-and-vw-相对于视口的高度和宽度"><a href="#vh-and-vw-相对于视口的高度和宽度" class="headerlink" title="vh and vw 相对于视口的高度和宽度"></a>vh and vw 相对于视口的高度和宽度</h3>vw：viewpoint width，视窗宽度，1vw等于视窗宽度的1%。<br>vh：viewpoint height，视窗高度，1vh等于视窗高度的1%。<br>vmin：vw和vh中较小的那个。<br>vmax：vw和vh中较大的那个。<br>浏览器高度900px，宽度为750px, 1 vh = 900px/100 = 9 px，1vw = 750px/100 = 7.5 px</li>
+</ol>
 
       
     </div>
@@ -197,7 +203,7 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/08/07/操作系统相关/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/08/18/sass/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
@@ -207,7 +213,7 @@
     </a>
   
   
-    <a href="/2016/07/19/css隐藏元素5种/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/08/18/Promise/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title"></div>
       <strong class="article-nav-caption">></strong>
     </a>
@@ -243,7 +249,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="datalist" data-title="" data-url="http://hicc1995.github.io/2016/08/07/datalist/"></div>
+	<div class="ds-thread" data-thread-key="单位" data-title="" data-url="http://hicc1995.github.io/2016/08/18/单位/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">

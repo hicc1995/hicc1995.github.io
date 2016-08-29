@@ -6,16 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="datalist用法HTML5的API,实现如输入框自动下拉提示(AutoComplete).123456&amp;lt;input id=&amp;quot;myCar&amp;quot; list=&amp;quot;cars&amp;quot; /&amp;gt;&amp;lt;datalist id=&amp;quot;cars&amp;quot;&amp;gt;  &amp;lt;option value=&amp;quot;BMW&amp;quot;&amp;gt;Detroit Lions&amp;l">
+  <meta name="description" content="fabric.js学习笔记github:https://github.com/kangax/fabric.js/官网:http://fabricjs.com/">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo">
-<meta property="og:url" content="http://hicc1995.github.io/2016/08/07/datalist/index.html">
+<meta property="og:url" content="http://hicc1995.github.io/2016/08/18/fabricjs/index.html">
 <meta property="og:site_name" content="hexo">
-<meta property="og:description" content="datalist用法HTML5的API,实现如输入框自动下拉提示(AutoComplete).123456&amp;lt;input id=&amp;quot;myCar&amp;quot; list=&amp;quot;cars&amp;quot; /&amp;gt;&amp;lt;datalist id=&amp;quot;cars&amp;quot;&amp;gt;  &amp;lt;option value=&amp;quot;BMW&amp;quot;&amp;gt;Detroit Lions&amp;l">
-<meta property="og:updated_time" content="2016-08-02T07:58:38.000Z">
+<meta property="og:description" content="fabric.js学习笔记github:https://github.com/kangax/fabric.js/官网:http://fabricjs.com/">
+<meta property="og:updated_time" content="2016-08-05T03:37:46.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo">
-<meta name="twitter:description" content="datalist用法HTML5的API,实现如输入框自动下拉提示(AutoComplete).123456&amp;lt;input id=&amp;quot;myCar&amp;quot; list=&amp;quot;cars&amp;quot; /&amp;gt;&amp;lt;datalist id=&amp;quot;cars&amp;quot;&amp;gt;  &amp;lt;option value=&amp;quot;BMW&amp;quot;&amp;gt;Detroit Lions&amp;l">
+<meta name="twitter:description" content="fabric.js学习笔记github:https://github.com/kangax/fabric.js/官网:http://fabricjs.com/">
   
   
     <link rel="icon" href="/favicon.png">
@@ -166,11 +166,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-datalist" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-fabricjs" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/08/07/datalist/" class="article-date">
-  	<time datetime="2016-08-07T00:36:02.925Z" itemprop="datePublished">2016-08-07</time>
+      <a href="/2016/08/18/fabricjs/" class="article-date">
+  	<time datetime="2016-08-18T02:45:03.346Z" itemprop="datePublished">2016-08-18</time>
 </a>
     </div>
   
@@ -181,13 +181,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="datalist用法"><a href="#datalist用法" class="headerlink" title="datalist用法"></a>datalist用法</h1><p>HTML5的API,实现如输入框自动下拉提示(AutoComplete).<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;input id=&quot;myCar&quot; list=&quot;cars&quot; /&gt;</span><br><span class="line">&lt;datalist id=&quot;cars&quot;&gt;</span><br><span class="line">  &lt;option value=&quot;BMW&quot;&gt;Detroit Lions&lt;/option&gt;</span><br><span class="line">  &lt;option value=&quot;Ford&quot;&gt;Detroit&lt;/option&gt;</span><br><span class="line">  &lt;option value=&quot;Volvo&quot;&gt;Lions&lt;/option&gt;</span><br><span class="line">&lt;/datalist&gt;</span><br></pre></td></tr></table></figure></p>
-<p>如果在option中一旦指定了value的值，则用户通过下拉列表选择后，文本框中显示的将会是value的值<br><a id="more"></a></p>
-<h5 id="Autocomplete属性"><a href="#Autocomplete属性" class="headerlink" title="Autocomplete属性"></a>Autocomplete属性</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=&quot;text&quot; name=&quot;address&quot; autocomplete=&quot;on&quot;&gt;</span><br></pre></td></tr></table></figure>
-<p>表示输入字段是否应该启用自动完成功能.</p>
-<h5 id="应对不支持的浏览器"><a href="#应对不支持的浏览器" class="headerlink" title="应对不支持的浏览器"></a>应对不支持的浏览器</h5><p>1）datalist中嵌套使用传统的select下拉选择框<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;label for=&quot;country&quot;&gt;Country:&lt;/label&gt;  </span><br><span class="line">&lt;datalist id=&quot;country_list&quot;&gt;  </span><br><span class="line">  &lt;select name=&quot;country&quot;&gt;  </span><br><span class="line">    &lt;option value=&quot;AF&quot;&gt;Afghanistan&lt;/option&gt;  </span><br><span class="line">    &lt;option value=&quot;AX&quot;&gt;Åland Islands&lt;/option&gt;  </span><br><span class="line">    &lt;option value=&quot;AL&quot;&gt;Albania&lt;/option&gt;   </span><br><span class="line">    &lt;!-- more --&gt;  </span><br><span class="line">  &lt;/select&gt;  </span><br><span class="line">  If other, please specify:  </span><br><span class="line">&lt;/datalist&gt;  </span><br><span class="line">&lt;input type=&quot;text&quot; name=&quot;country&quot; id=&quot;country&quot; list=&quot;country_list&quot;&gt;</span><br></pre></td></tr></table></figure></p>
-<p>如果不支持datalist会显示两个框,可能会有布局的问题.<br>2）使用jquery ui中的autocomplete插件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">if (Modernizr.input.list) &#123;  </span><br><span class="line">//如果返回值为true，则证明浏览器支持datalist  </span><br><span class="line">  &#125; else &#123;  </span><br><span class="line">    //浏览器不支持datalist  </span><br><span class="line">  &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h5 id="Datalist的限制"><a href="#Datalist的限制" class="headerlink" title="Datalist的限制"></a>Datalist的限制</h5><p>当然，Datalist也有限制和不足之处，体现在：<br>1）不能使用CSS去随意控制或改变其下拉建议列表中的项<br>2）不能控制datalist的位置<br>3) 不能控制每次当用户输入多少个字符后，就出现下拉建议列表<br>4）不能控制大小写敏感，或当匹配什么样的字符就出现下拉建议列表<br>5）不能将其与服务端的数据源绑定</p>
+        <h1 id="fabric-js学习笔记"><a href="#fabric-js学习笔记" class="headerlink" title="fabric.js学习笔记"></a>fabric.js学习笔记</h1><p>github:<a href="https://github.com/kangax/fabric.js/" target="_blank" rel="external">https://github.com/kangax/fabric.js/</a><br>官网:<a href="http://fabricjs.com/" target="_blank" rel="external">http://fabricjs.com/</a><br><a id="more"></a><br>+模块化<br>+跨浏览器<br>+快<br>+封装在一个对象里<br>+基于Node.js<br>浏览器兼容性:<br>+Firefox 2+<br>+Safari 3+<br>+Opera 9.64+<br>+Chrome (all versions)<br>+IE9, IE10, IE11, Edge</p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ bower install fabric</span><br></pre></td></tr></table></figure>
+<p>or<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install fabric --save</span><br></pre></td></tr></table></figure></p>
+<h4 id="构建"><a href="#构建" class="headerlink" title="构建"></a>构建</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ node build.js</span><br></pre></td></tr></table></figure>
+<p>自定义<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ node build.js modules=text,serialization,parser</span><br><span class="line">// or</span><br><span class="line">$ node build.js modules=text</span><br><span class="line">// or</span><br><span class="line">$ node build.js modules=parser,text</span><br><span class="line">// etc.</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -197,7 +195,7 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/08/07/操作系统相关/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/08/18/Promise/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
@@ -207,7 +205,7 @@
     </a>
   
   
-    <a href="/2016/07/19/css隐藏元素5种/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/08/07/ES6/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title"></div>
       <strong class="article-nav-caption">></strong>
     </a>
@@ -243,7 +241,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="datalist" data-title="" data-url="http://hicc1995.github.io/2016/08/07/datalist/"></div>
+	<div class="ds-thread" data-thread-key="fabricjs" data-title="" data-url="http://hicc1995.github.io/2016/08/18/fabricjs/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
