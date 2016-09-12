@@ -11,12 +11,12 @@ ES6：http://es6.ruanyifeng.com/#docs/intro
 回顾历史：ECMAScript和JavaScript的关系">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo">
-<meta property="og:url" content="http://hicc1995.github.io/2016/08/07/ES6/index.html">
+<meta property="og:url" content="http://hicc1995.github.io/2016/08/29/ES6/index.html">
 <meta property="og:site_name" content="hexo">
 <meta property="og:description" content="ES62015年6月，由TC39标准委员会批准2016年2月发布了ES7草案。增加了乘方运算符和Array.prototype.include()。V8支持ES6,ES7（Chrome Canary 金丝雀版），新特性将在Chrome 52正式版中默认支持
 ES6：http://es6.ruanyifeng.com/#docs/intro
 回顾历史：ECMAScript和JavaScript的关系">
-<meta property="og:updated_time" content="2016-08-07T00:58:28.729Z">
+<meta property="og:updated_time" content="2016-08-29T00:42:14.534Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo">
 <meta name="twitter:description" content="ES62015年6月，由TC39标准委员会批准2016年2月发布了ES7草案。增加了乘方运算符和Array.prototype.include()。V8支持ES6,ES7（Chrome Canary 金丝雀版），新特性将在Chrome 52正式版中默认支持
@@ -175,8 +175,8 @@ ES6：http://es6.ruanyifeng.com/#docs/intro
       <div class="body-wrap"><article id="post-ES6" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/08/07/ES6/" class="article-date">
-  	<time datetime="2016-08-07T00:58:33.117Z" itemprop="datePublished">2016-08-07</time>
+      <a href="/2016/08/29/ES6/" class="article-date">
+  	<time datetime="2016-08-29T00:42:14.534Z" itemprop="datePublished">2016-08-29</time>
 </a>
     </div>
   
@@ -189,7 +189,7 @@ ES6：http://es6.ruanyifeng.com/#docs/intro
       
         <h1 id="ES6"><a href="#ES6" class="headerlink" title="ES6"></a>ES6</h1><p>2015年6月，由TC39标准委员会批准<br>2016年2月发布了ES7草案。增加了乘方运算符和Array.prototype.include()。<br>V8支持ES6,ES7（Chrome Canary 金丝雀版），新特性将在Chrome 52正式版中默认支持</p>
 <p>ES6：<a href="http://es6.ruanyifeng.com/#docs/intro" target="_blank" rel="external">http://es6.ruanyifeng.com/#docs/intro</a></p>
-<p>回顾历史：<br>ECMAScript和JavaScript的关系： 前者是后者的规格，后者是前者的一种实现<br>     1996年11月，JavaScript的创造者Netscape公司，决定将JavaScript提交给国际标准化组织ECMA，希望这种语言能够成为国际标准。次年，ECMA发布262号标准文件（ECMA-262）的第一版，规定了浏览器脚本语言的标准，并将这种语言称为ECMAScript，这个版本就是1.0版。<br>不叫的原因是因为版权，对版权Java是Sun公司的，JavaScript是Netscape公司的</p>
+<p>回顾历史：<br>ECMAScript和JavaScript的关系： 前者是后者的规格，后者是前者的一种实现<br>     1996年11月，JavaScript的创造者Netscape公司，决定将JavaScript提交给国际标准化组织ECMA，希望这种语言能够成为国际标准。次年，ECMA发布262号标准文件（ECMA-262）的第一版，规定了浏览器脚本语言的标准，并将这种语言称为ECMAScript，这个版本就是1.0版。<br>不叫的原因是因为版权，对版权Java是Sun公司的，JavaScript是Netscape公司的<br><a id="more"></a></p>
 <h5 id="1-let命令"><a href="#1-let命令" class="headerlink" title="1.let命令"></a>1.let命令</h5><p>用法类似于var，但是所声明的变量，只在let命令所在的代码块内有效。类似于块级作用域<br>for里面定义变量，只在for内有效。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var a = [];for (let i = 0; i &lt; 10; i++) &#123;</span><br><span class="line">  a[i] = function () &#123;</span><br><span class="line">    console.log(i);</span><br><span class="line">  &#125;;&#125;</span><br><span class="line">a[6](); // 6</span><br></pre></td></tr></table></figure></p>
 <p>不存在变量提升：不能先用在定义。会抛出错误。<br>变量提升：js代码运行前有有编译阶段，编译阶段处理声明，运行阶段处理赋值<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a;            //编译阶段</span><br><span class="line">console.log(a);   //运行阶段 </span><br><span class="line">a = 2;            //运行阶段    输出undefiend</span><br></pre></td></tr></table></figure></p>
 <p><em>暂时性死区</em><br>ES6明确规定，如果区块中存在let和const命令，这个区块对这些命令声明的变量，从一开始就形成了封闭作用域。凡是在声明之前就使用这些变量，就会报错。<br>不允许重复声明同一个变量</p>
@@ -223,7 +223,7 @@ ES6：http://es6.ruanyifeng.com/#docs/intro
     
 <nav id="article-nav">
   
-    <a href="/2016/08/18/fabricjs/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/09/02/this/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
@@ -233,7 +233,7 @@ ES6：http://es6.ruanyifeng.com/#docs/intro
     </a>
   
   
-    <a href="/2016/08/07/svg/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/08/29/sass/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title"></div>
       <strong class="article-nav-caption">></strong>
     </a>
@@ -269,7 +269,7 @@ ES6：http://es6.ruanyifeng.com/#docs/intro
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="ES6" data-title="" data-url="http://hicc1995.github.io/2016/08/07/ES6/"></div>
+	<div class="ds-thread" data-thread-key="ES6" data-title="" data-url="http://hicc1995.github.io/2016/08/29/ES6/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">

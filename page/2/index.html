@@ -167,6 +167,187 @@
 
       <div class="body-wrap">
   
+    <article id="post-设计模式相关" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/08/07/设计模式相关/" class="article-date">
+  	<time datetime="2016-08-07T00:36:08.365Z" itemprop="datePublished">2016-08-07</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h1><p>一个模式就是一个可重用的方案,应用于软件设计中的常见问题.</p>
+<h5 id="反模式"><a href="#反模式" class="headerlink" title="反模式"></a>反模式</h5><p>1.在全局上面文中定义大量污染全局命令空间的变量<br>2.在调用setTimeout和setInterval时传递字符串(会用eval来执行)而不是函数。<br>3.修改Object的原型 (这是最糟糕的反模式)<br>4.使用内联Javascript<br>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2016/08/07/设计模式相关/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-操作系统相关" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/08/07/操作系统相关/" class="article-date">
+  	<time datetime="2016-08-07T00:36:05.469Z" itemprop="datePublished">2016-08-07</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="操作系统相关"><a href="#操作系统相关" class="headerlink" title="操作系统相关"></a>操作系统相关</h1><h5 id="进程和线程"><a href="#进程和线程" class="headerlink" title="进程和线程"></a>进程和线程</h5><p>对于操作系统来说一个进程就是一个任务<br>单个cpu一次运行一个任务,任意时刻cpu运行一个进程,一个进程可以包括多个线程<br>区别:<br>进程有独立的地址空间，一个进程崩溃后，在保护模式下不会对其它进程产生影响，而线程只是一个进程中的不同执行路径。线程有自己的堆栈和局部变量，但线程之间没有单独的地址空间，一个线程死掉就等于整个进程死掉，所以多进程的程序要比多线程的程序健壮，但在进程切换时，耗费资源较大，效率要差一些。但对于一些要求同时进行并且又要共享某些变量的并发操作，只能用线程，不能用进程。</p>
+<h5 id="多任务"><a href="#多任务" class="headerlink" title="多任务"></a>多任务</h5><p>单核cpu实现多任务是通过交替执行任务实现的<br>执行多任务:<br>一种是启动多个进程，每个进程虽然只有一个线程，但多个进程可以一块执行多个任务。<br>还有一种方法是启动一个进程，在一个进程内启动多个线程，这样，多个线程也可以一块执行多个任务。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-datalist" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/08/07/datalist/" class="article-date">
+  	<time datetime="2016-08-07T00:36:02.925Z" itemprop="datePublished">2016-08-07</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="datalist用法"><a href="#datalist用法" class="headerlink" title="datalist用法"></a>datalist用法</h1><p>HTML5的API,实现如输入框自动下拉提示(AutoComplete).<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;input id=&quot;myCar&quot; list=&quot;cars&quot; /&gt;</span><br><span class="line">&lt;datalist id=&quot;cars&quot;&gt;</span><br><span class="line">  &lt;option value=&quot;BMW&quot;&gt;Detroit Lions&lt;/option&gt;</span><br><span class="line">  &lt;option value=&quot;Ford&quot;&gt;Detroit&lt;/option&gt;</span><br><span class="line">  &lt;option value=&quot;Volvo&quot;&gt;Lions&lt;/option&gt;</span><br><span class="line">&lt;/datalist&gt;</span><br></pre></td></tr></table></figure></p>
+<p>如果在option中一旦指定了value的值，则用户通过下拉列表选择后，文本框中显示的将会是value的值<br>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2016/08/07/datalist/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-css隐藏元素5种" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/19/css隐藏元素5种/" class="article-date">
+  	<time datetime="2016-07-19T15:30:54.010Z" itemprop="datePublished">2016-07-19</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="CSS隐藏页面元素6种"><a href="#CSS隐藏页面元素6种" class="headerlink" title="CSS隐藏页面元素6种"></a>CSS隐藏页面元素6种</h1><h4 id="Opacity"><a href="#Opacity" class="headerlink" title="Opacity"></a>Opacity</h4><p>元素透明度设为0,只是视觉上不可见,元素仍占据自己的位置.<br>对于读屏软件无用,内容还是会显示.</p>
+<h4 id="Visibility"><a href="#Visibility" class="headerlink" title="Visibility"></a>Visibility</h4><p>设为hidden,同opacity,隐藏元素依旧会对网页布局起作用<br>注意:如果一个元素的 visibility 被设置为 hidden，同时想要显示它的某个子孙元素，只要将那个元素的 visibility 显式设置为 visible 即可<br>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2016/07/19/css隐藏元素5种/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-css选择器" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -379,59 +560,6 @@
         <p class="article-more-link">
           <a  href="/2016/07/19/CDN/#more">more >></a>
         </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-cc" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/06/08/cc/" class="article-date">
-  	<time datetime="2016-06-08T08:04:44.000Z" itemprop="datePublished">2016-06-08</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/08/cc/">cc</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>fuck hexo</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
       
       <div class="clearfix"></div>
     </div>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="浏览器缓存（Browser Caching）浏览器端保存数据，优化读取或避免重复资源请求的优化机制。机制共有9种(浏览器调试模式resources).减少网络带宽，降低服务器压力，减少网络延迟。
+HTTP缓存">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo">
+<meta property="og:url" content="http://hicc1995.github.io/2016/09/12/浏览器缓存/index.html">
+<meta property="og:site_name" content="hexo">
+<meta property="og:description" content="浏览器缓存（Browser Caching）浏览器端保存数据，优化读取或避免重复资源请求的优化机制。机制共有9种(浏览器调试模式resources).减少网络带宽，降低服务器压力，减少网络延迟。
+HTTP缓存">
+<meta property="og:image" content="http://images.cnblogs.com/cnblogs_com/skynet/201211/201211281402438011.png">
+<meta property="og:updated_time" content="2016-09-11T14:04:48.781Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hexo">
+<meta name="twitter:description" content="浏览器缓存（Browser Caching）浏览器端保存数据，优化读取或避免重复资源请求的优化机制。机制共有9种(浏览器调试模式resources).减少网络带宽，降低服务器压力，减少网络延迟。
+HTTP缓存">
+<meta name="twitter:image" content="http://images.cnblogs.com/cnblogs_com/skynet/201211/201211281402438011.png">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://7xvzwe.com1.z0.glb.clouddn.com/webwxgetmsgimg.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">cc</a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>Menu</li>
+						<li>Tags</li>
+						
+						
+						<li>Über</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/hicc1995" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/2937970195/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" title="weibo">weibo</a>
+					        
+								<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/hi-cc" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						
+					</div>
+				</section>
+				
+				
+				
+
+				
+				
+				<section class="switch-part switch-part3">
+				
+					<div id="js-aboutme">想当程序媛的鼓励师～</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">cc</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="http://7xvzwe.com1.z0.glb.clouddn.com/webwxgetmsgimg.jpg" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">cc</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/hicc1995" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/2937970195/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" title="weibo">weibo</a>
+			        
+						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/hi-cc" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-浏览器缓存" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/09/12/浏览器缓存/" class="article-date">
+  	<time datetime="2016-09-12T02:25:03.729Z" itemprop="datePublished">2016-09-12</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="浏览器缓存（Browser-Caching）"><a href="#浏览器缓存（Browser-Caching）" class="headerlink" title="浏览器缓存（Browser Caching）"></a>浏览器缓存（Browser Caching）</h1><p>浏览器端保存数据，优化读取或避免重复资源请求的优化机制。机制共有9种(浏览器调试模式resources).<br>减少网络带宽，降低服务器压力，减少网络延迟。</p>
+<h2 id="HTTP缓存"><a href="#HTTP缓存" class="headerlink" title="HTTP缓存"></a>HTTP缓存</h2><p><img src="http://images.cnblogs.com/cnblogs_com/skynet/201211/201211281402438011.png" alt=""><br><a id="more"></a><br>参考：<br><a href="http://www.cnblogs.com/skynet/archive/2012/11/28/2792503.html" target="_blank" rel="external">http://www.cnblogs.com/skynet/archive/2012/11/28/2792503.html</a></p>
+<h3 id="Web-SQL"><a href="#Web-SQL" class="headerlink" title="Web SQL"></a>Web SQL</h3><p>w3c不支持，本地存储<br>1.websql是单独的规范不是h5的组成部分。<br>2.将数据以数据库的形式存储在客户端关键需求读取，让浏览器有小型数据库存储功能。这个数据库是集成在浏览器里面的。<br>主要包含三个方法：openDatabase，transaction，executeSql</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var db = openDatabase(&apos; mydatabase &apos;, &apos;1.0&apos;, &apos;Test DB&apos;, 2 * 1024 * 1024); //打开已存在的数据库，不存在的创建。</span><br><span class="line">//database.transaction() 函数用来查询，executeSql()用于执行sql语句</span><br><span class="line">db.transaction(function (tx) &#123;    </span><br><span class="line">   tx.executeSql(&apos;CREATE TABLE IF NOT EXISTS t1 (id unique, log)&apos;);  </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="indexedDB-？？"><a href="#indexedDB-？？" class="headerlink" title="indexedDB ？？"></a>indexedDB ？？</h2><p>在客户端存储结构化数据，并在数据上使用索引检索。</p>
+<h2 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h2><p>Cookies辨别用户身份进行session跟踪而存储在浏览器上的加密数据。通过http请求中在头部一起发送到服务器端<br>主要由键、值、域、过期时间、大小组成。</p>
+<h2 id="localstorage"><a href="#localstorage" class="headerlink" title="localstorage"></a>localstorage</h2><h2 id="sessionstorage"><a href="#sessionstorage" class="headerlink" title="sessionstorage"></a>sessionstorage</h2><h2 id="application-cache"><a href="#application-cache" class="headerlink" title="application cache"></a>application cache</h2><p>将大部分图片资源、js、css等静态资源放在manifest文件配置中，页面打开时通过manifest文件来读取本地文件或是请求服务器文件</p>
+<h6 id="H5的API，前提是web页面至少被缓存过一次"><a href="#H5的API，前提是web页面至少被缓存过一次" class="headerlink" title="H5的API，前提是web页面至少被缓存过一次"></a>H5的API，前提是web页面至少被缓存过一次</h6><p>1.离线浏览 – 用户可在离线时浏览您的完整网站<br>2.速度 – 缓存资源为本地资源，因此加载速度较快。<br>3.服务器负载更少 – 浏览器只会从发生了更改的服务器下载资源。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var appCache = window.applicationCache;</span><br><span class="line">appCache.update(); // Attempt to update the user’s cache.</span><br><span class="line">…</span><br><span class="line">if (appCache.status == window.applicationCache.UPDATEREADY) &#123;</span><br><span class="line">  appCache.swapCache();  // The fetch was successful, swap in the new cache.</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>为了通过编程更新cache，首先调用 applicationCache.update()。这将会试图更新用户的 cache（要求manifest文件已经改变）。最后，当 applicationCache.status 处于 UPDATEREADY 状态时， 调用applicationCache.swapCache()，旧的cache就会被置换成新的。</p>
+<h2 id="cacheStorage"><a href="#cacheStorage" class="headerlink" title="cacheStorage"></a>cacheStorage</h2><h2 id="flash缓存"><a href="#flash缓存" class="headerlink" title="flash缓存"></a>flash缓存</h2><p>基本不用，基于flash有读写浏览器端本地目录的功能。页面可以通过js调用flash去读写特定的磁盘目录，达到缓存目的。</p>
+<h1 id="web缓存类型"><a href="#web缓存类型" class="headerlink" title="web缓存类型"></a>web缓存类型</h1><p>数据库数据缓存：见查询后的数据放在内存中<br>服务器端缓存：a.代理服务器缓存b.CDN缓存<br>浏览器端缓存：与服务器约定的规则进行工作<br>web应用层缓存：从代码层面上实现对资源的缓存，可以根据实际情况选择将数据存在文件系统或者内存中。</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/09/07/精通css读书笔记/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="浏览器缓存" data-title="" data-url="http://hicc1995.github.io/2016/09/12/浏览器缓存/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 cc
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
